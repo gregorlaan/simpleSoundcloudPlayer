@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Simple SoundCloud Player</title>
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="fonts.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="https://connect.soundcloud.com/sdk/sdk-3.1.2.js"></script>
+
+	<script src="scripts.js"></script>
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="container">
+			<div id="player">
+
+				<div class="avatar">
+					<a href target="_blank">
+						<img />
+					</a>
+				</div>
+				
+				<div class="player-area">
+					<div id="title">title</div>
+					<div id="genre"><a href target="_blank">genre</a></div>
+
+					<div class="playback-wrapper">
+						<div class="play-btn btn"><span><i class="fa fa-play" aria-hidden="true"></i></span></div>
+						<div class="pause-btn btn"><span><i class="fa fa-pause" aria-hidden="true"></i></span></div>
+						<div class="stop-btn btn"><span><i class="fa fa-stop" aria-hidden="true"></i></span></div>
+						<div class="mute-btn btn"><span><i class="fa fa-volume-off" aria-hidden="true"></i></span></div>
+					</div>
+
+					<div class="volume-wrapper">
+						<input type="range" name="points" id="volume" value="100" min="0" max="100">
+						<div class="current-volume-background"></div>
+						<div class="current-volume"></div>
+					</div>
+					<div class="time-wrapper">
+						<div class="length-time">
+							<div id="current-time">00:00</div>
+							<span> / </span>
+							<div id="duration">duration</div>
+						</div>
+						<input type="range" name="points" id="time-slider" value="0" min="0" max="100">
+						<div class="current-time-background"></div>
+						<div class="current-time"></div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
